@@ -1,0 +1,32 @@
+In training we forked two repos: infrastrcture repo (iac-vprofile) and app repo (vprofile-action)
+(all branches)
+
+Setup your ssh keys of course in github settings
+(may need to run sshkeygen)
+
+cloned both branches for training it was:
+`git clone git@github.com:devops4sure/iac-vprofile.git` 
+`git clone git@github.com:devops4sure/vprofile-action.git`
+
+So we forked them onto our own github account because we need the rights to play with github actions etc..besides,we wouldn't want to mess w/anybody elses repo!  
+
+We want to make sure we are sunig the ssh keys we created. Lets run this command to ensure 
+
+`cd iac-vprofile/`
+# where actions is where the private keys is`
+`git config core.shCommand "ssh -i ~/.ssh/actions -F /dev/null"`
+# obviously, replace devops4sure w/your own id
+`git config --global user.name devops4sure`
+`git config --global user.email devops4sure@gmail.com`
+# Udemy wanted us to copy the repo like so but that's cause they didn't trust us switch branches IMO
+
+`cp -r iac-vprofile main-iac`
+`cd iac-vprofile`
+`git branch -a`
+# this will output two branches: stage and main
+`git checkout stage` # this will checkout stage and set the local stage to track/point to the remote github stage branch
+`git status`
+We will be making changes to the staging branch. If it works, we'll merge into main
+
+
+
