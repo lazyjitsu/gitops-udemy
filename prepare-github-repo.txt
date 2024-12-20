@@ -64,6 +64,11 @@ The App Repo should have:
   2. AWS_SECRET_ACCESS_KEY
   3. REGISTRY
 
+## Terraform
+Using for installing VPC infrastructure (subnets, instances, i think vpc else using default, sec groups etc..) and the EKS cluster on top of it.
+Caution: Since we are running from Github, Udemy has taken caution and not to develop this over stages for tutorial purposes. This is because of something went wrong
+from Github to AWS, we may think that we fixed it but then another cluster might be created unbeknownst to us and this is a bit expensive.
+
 
 
 
