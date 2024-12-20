@@ -31,7 +31,7 @@ We will be making changes to the staging branch. If it works, we'll merge into m
 
 Goto AWS and create user and give user administrative rights. We're using administrative rights for simplicity. In real world, you would reduce the amount of permissions. Generate access key for API usage.
 
-We will be creating some secrets on Github path given above of course
-Create Secret > Name [AWS_SECT_KY]
+We will be creating some secrets on Github path given above of course. 
+Create Secret > Name [AWS_ACCESS_SECT_KY]
 Value [token]
 
