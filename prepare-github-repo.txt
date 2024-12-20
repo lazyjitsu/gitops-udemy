@@ -1,3 +1,4 @@
+# This document is sort of my 2nd attempt at documenting the steps in some sort of high-level disussion on the subject.
 In training we forked two repos: infrastrcture repo (iac-vprofile) and app repo (vprofile-action)
 (all branches)
 
@@ -28,5 +29,9 @@ We want to make sure we are sunig the ssh keys we created. Lets run this command
 `git status`
 We will be making changes to the staging branch. If it works, we'll merge into main
 
+Goto AWS and create user and give user administrative rights. We're using administrative rights for simplicity. In real world, you would reduce the amount of permissions. Generate access key for API usage.
 
+We will be creating some secrets on Github path given above of course
+Create Secret > Name [AWS_SECT_KY]
+Value [token]
 
