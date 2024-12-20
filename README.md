@@ -1,6 +1,9 @@
 # GitOps --- Udemy
 Start here
-:::mermaid
-flowchart LR
-    T["Testing"]
-:::
+```mermaid
+#graph LR;
+#    A-->B;
+#    A-->C;
+#    B-->D;
+#    C-->D;
+```
