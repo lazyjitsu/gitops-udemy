@@ -2,8 +2,8 @@
 Start here
 ```mermaid
 graph LR;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Terra["Terraform"]
+    VPC["VPC"]
+    K8S["Kubernetes/EKS Cluster"]
+    Terra --> VPC --> K8S
 ```
