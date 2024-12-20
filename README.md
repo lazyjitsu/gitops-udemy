@@ -9,5 +9,5 @@ graph LR;
 
 style Terra color:#f66
 A@{ shape: docs, label: "terraform.tf,variables.tf,vpc.tf,main.tf,eks-cluster.tf" }
-style A color:#FFF
+style A color:#F66
 ```
