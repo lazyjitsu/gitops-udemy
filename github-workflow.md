@@ -1,4 +1,5 @@
 # Writing Our Workflow (i.e. Pipeline)
+
 - Write Code in our own repository. This means github for us
 - Create the directory structure
     - mkdir .github/workflows
@@ -6,11 +7,11 @@
 
 
 
-$ pwd
-/d/mySource/Training/DevOps/Udemy/DevOps Beginners to Advanced with Projects/GitOps/iac-vprofile
-$ tree
-Folder PATH listing for volume LENOVO
-Volume serial number is 0CBC-E19B
+$ pwd<br>
+/d/mySource/Training/DevOps/Udemy/DevOps Beginners to Advanced with Projects/GitOps/iac-vprofile<br>
+$ tree<br>
+Folder PATH listing for volume LENOVO<br>
+Volume serial number is 0CBC-E19B<br>
 D:.
 ├───.github
 │   └───workflows
@@ -20,7 +21,9 @@ D:.
 touch .github/workflows/terraform.yml
 
 IMU that the fact that you have any yaml file ni the workflows is a trigger to github to run but when you define on and push, github workflows will stop and check to get its orders on what to do! An excerpt of this file for a reminder
+
 ## terraform.yml
+```
 name: "Vprofile IAC"
 on: 
     push:
@@ -40,4 +43,5 @@ on:
         # Creds for AWS deployment
          AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
          AWS_SECRET_ACCESS_KEY_ID: ${{secrets.AWS_SECRET_ACCESS_KEY_ID}}
-
+         BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE }}
+```
